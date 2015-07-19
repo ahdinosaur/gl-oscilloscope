@@ -20,7 +20,7 @@ var opts = {
 readAudio(opts, function (err, stream) {
   if (err) { throw err }
 
-  var bufShape = [opts.buffer * 10, opts.channels]
+  var bufShape = [opts.buffer * 1, opts.channels]
   var buf = CBuffer(size(bufShape))
   buf.fill(0)
 
